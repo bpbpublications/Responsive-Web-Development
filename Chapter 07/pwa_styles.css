@@ -1,0 +1,39 @@
+
+/* Basic styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    /* Adjust layout for tablets and smaller screens */
+    main {
+        flex-direction: column;
+    }
+
+    .content, .sidebar {
+        flex: 0 0 100%;
+    }
+}

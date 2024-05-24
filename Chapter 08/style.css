@@ -1,0 +1,6 @@
+
+#connectivityStatus {
+    color: white;
+    padding: 10px;
+    background-color: green; /* Default assuming online */
+}

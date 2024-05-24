@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>News Article Title</title>
+    <link rel="canonical" href="http://example.com/regular-html-version.html"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>
+        body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        /* Custom Styles Here */
+        article {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #005689;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Exciting News Article Title</h1>
+            <p><time datetime="2023-01-01">January 1, 2023</time></p>
+        </header>
+        <p>This is the first paragraph of the news article...</p>
+        <amp-img src="path-to-your-image.jpg" width="800" height="600" alt="A descriptive image alternative text" layout="responsive"></amp-img>
+        <amp-video controls width="480" height="270" layout="responsive">
+            <source src="path-to-your-video.mp4" type="video/mp4">
+        </amp-video>
+        <!-- More content -->
+    </article>
+</body>
+</html>

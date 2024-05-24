@@ -1,0 +1,31 @@
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #007BFF;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Optimization Techniques styles */
+#optimization-techniques article {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border-left: 5px solid #007BFF;
+}
+
+/* Case Studies styles */
+#case-studies article {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 3px solid #007BFF;
+}

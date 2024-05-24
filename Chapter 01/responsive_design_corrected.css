@@ -1,0 +1,170 @@
+
+/* Example 1: Percentage-based widths */
+.container {
+ width: 80%; /* The container will occupy 80% of its parent element's width */
+ margin: 0 auto; /* This centers the container within the parent */
+}
+
+/* Example 2: Viewport Width (vw) and Viewport Height (vh) */
+.hero {
+ width: 100vw; /* Full viewport width */
+ height: 50vh; /* Half of viewport height */
+ background-color: skyblue;
+}
+
+/* Example 3: Flexible Text with em or rem */
+body {
+ font-size: 16px; /* Base font size */
+}
+
+p {
+ font-size: 1rem; /* 1rem = 16px in this case */
+}
+
+.subtitle {
+ font-size: 1.5em; /* 1.5 times the font size of its parent element */
+}
+
+/* Basic Flexible Image */
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+/* Responsive background image */
+.background-image {
+ background-image: url('path/to/image.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 300px; /* or any desired height */
+}
+
+/* Basic responsive grid */
+.container {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.column {
+ flex: 50%; /* Each column takes up 50% of the container width */
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 600px) {
+ .column {
+ flex: 100%; /* Each column takes up 100% of the container width */
+ }
+}
+
+/* Fluid multi-column layout */
+.grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 10px;
+}
+
+.grid-item {
+ /* Styling for grid items */
+}
+
+/* Nested grids for complex layouts */
+.main-grid {
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 15px;
+}
+
+.nested-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+ .main-grid, .nested-grid {
+ grid-template-columns: 1fr;
+ }
+}
+
+/* Base styles for mobile */
+.container {
+ width: 100%;
+ padding: 10px;
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 600px) {
+ .container {
+ width: 80%;
+ padding: 20px;
+ }
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 1024px) {
+ .container {
+ width: 60%;
+ max-width: 960px;
+ margin: auto;
+ }
+}
+
+/* Orientation-based media query */
+.portrait-only {
+ display: none;
+}
+
+@media screen and (orientation: portrait) {
+ .portrait-only {
+ display: block;
+ }
+}
+
+/* Responsive typography */
+body {
+ font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+ body {
+ font-size: 18px;
+ }
+}
+
+@media screen and (min-width: 1024px) {
+ body {
+ font-size: 20px;
+ }
+}
+
+/* Complex layout adjustments */
+.grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+ .grid {
+ grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .grid {
+ grid-template-columns: 1fr;
+ }
+}
+
+/* Using CSS for flexibility */
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+/* Responsive background images */
+.responsive-background {
+ background-image: url('image.jpg');
+ background-size: cover;
+ background-position: center;
+}

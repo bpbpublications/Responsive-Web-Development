@@ -1,0 +1,17 @@
+
+<!-- Example 3: Art direction with <picture> -->
+<picture>
+ <source media="(min-width: 800px)" srcset="large-image.jpg">
+ <source media="(min-width: 400px)" srcset="medium-image.jpg">
+ <img src="small-image.jpg" alt="Descriptive text for the image">
+</picture>
+
+<!-- Using srcset and sizes attributes -->
+<img src="default.jpg" srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500w" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="Description">
+
+<!-- The <picture> element for art direction -->
+<picture>
+ <source media="(min-width: 800px)" srcset="large.jpg">
+ <source media="(min-width: 400px)" srcset="medium.jpg">
+ <img src="small.jpg" alt="Description">
+</picture>

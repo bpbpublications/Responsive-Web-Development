@@ -1,0 +1,56 @@
+/* CSS Example for Navigation Patterns */
+/* Bottom Navigation Bar Styles */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+.bottom-nav a {
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.bottom-nav a.active {
+    background-color: #007bff;
+}
+
+/* Navigation Drawer Styles */
+.nav-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.nav-drawer a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-drawer a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    margin-bottom: 60px; /* Same as the height of the bottom-nav */
+}
