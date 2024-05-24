@@ -1,2 +1,2 @@
-# Next-Gen Web and Mobile
- Next-Gen Web and Mobile, by BPB Publications
+# Responsive Web Development
+ Responsive Web Development, by BPB Publications
